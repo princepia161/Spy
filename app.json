@@ -12,7 +12,7 @@
     "stack": "container",
     "env": {
         "API_ID": {
-            "description": "20807000",
+            "description": 20807000,
             "required": true
         },
         "API_HASH": {
