@@ -7,15 +7,17 @@ WORKDIR /app
 COPY . .
 
 # Install necessary dependencies
-RUN apk add --no-cache \
+RUN apt-get update && apt-get install -y --no-install-recommends \
     gcc \
     libffi-dev \
-    musl-dev \
     ffmpeg \
     aria2 \
     make \
     g++ \
-    cmake
+    cmake \
+    wget \
+    unzip \
+    && rm -rf /var/lib/apt/lists/*
 
 # Install Bento4
 RUN wget -q https://github.com/axiomatic-systems/Bento4/archive/v1.6.0-639.zip && \
