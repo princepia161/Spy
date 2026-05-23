@@ -30,14 +30,14 @@ bot = Client("bot",
              api_id=add,
              api_hash='add')
 
-owner_id = [6530997270]
-auth_users = [6530997270]
+owner_id = [890749443]
+auth_users = [890749443]
 photo1 = 'https://envs.sh/PQ_.jpg'
 getstatusoutput(f"wget {photo1} -O 'photo.jpg'")
 photo = "photo.jpg"
 
 
-token_cp = 'your cp token'
+token_cp = 'hZ2UiOiJFTilsImNvdW50cnIDb2RlljoiSU4iLCJjb3VudHJ5SVNPljoiOTEiLCJ0aW1lem9uZSI6IkdNVCs1OjMwliwiaXNEaXkiOnRydWUsIm9yZ0NvZGUiOiJra3Vja3kiLCJpc0RpeVN1YmFkbWluljowLCJmaW5nZXJwcmludEIkljoiYzdkYTk3M2E3Y2IzM2MyZmQ3ZjQyZDImOGFiZTcyNzYiLCJpYXQiOjE3Nzk0NDEwMTkslmV4cCI6MTc4MDA0NTgxOX0.r8KGfsInmSuR2LgPzaY7iCPooumjZ9y33WS6q1vRXZNt XN5rtY5-5EfobVHY78nW'
 
 @bot.on_message(filters.command(["start"]) & filters.user(owner_id))
 async def account_login(bot: Client, m: Message):
